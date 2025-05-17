@@ -5,14 +5,18 @@
     <meta name="robots" content="noidex, nofollow" />
     <meta name="description" content="自己紹介サイトです。" />
     <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="styleshieet" href="https://cdnjs.cloudflare.com/afax/libs/font-awesome/6.1.1/css/all.min.css">
+    
 </head>
 <body>
     <header>
-        <div>
-            <a href="./">
+        <div id="head_in">
+            <a href="./" class="logo"><img src="images/logo.png" alt="logo"></a>
             </a>
             <nav>
-                <ul> 
+                <ul class="text"> 
                     <li><a href="#home">ホーム</a></li>
                     <li><a href="#hobby">hobby</a></li>
                     <li><a href="#work">work</a></li>
@@ -20,29 +24,30 @@
             </nav>
         </div>
         <!--ファーストビュー-->
-        <div>
-            <h1>ryuseiです</h1>
+        <div id="fv">
+            <div class="fv_in">
+            <h1>ryuseiです</h1><!--開いてから左からフェードインするようにしてみる-->
             <p>こんにちは、初めまして、インターン生のryuseiです<br>
                 これから教えてもらったこと、勉強したこと、やってみたこと<br>
                 を備忘録として残していこうと思います。</p>
         </div>
-        <p><img src="images/profile_18.JPG" alt="自己紹介"></p>
+        </div>
     </header>
     <main>
         <!--　コンセプト-->
-        <section>
-            <div>
-                <h2>活動</h2>
+        <section id="concept" class="mt14">
+            <div class="wrap_1000">
+                <h2 class="t_center">活動</h2>
                 <p>普段は大学に通いながら自分で学習を進め、お手伝いをしています。まだまだ修行中ですがこれからよろしくお願いします。
                 </p>
             </div>
-            <div>
-                <div>
-                    <h3>自己紹介</h3>
-                    <p>小中とサッカーをしていて、高校から軽音楽部に入ってギターを始めました。
+            <div class="mt5 flex flex_right">
+                <div class="lecture_box">
+                    <h3 class="gray_bg_title">自己紹介</h3>
+                    <p class="mb4">小中とサッカーをしていて、高校から軽音楽部に入ってギターを始めました。
                         大学に入っても軽音楽部に入って楽しくライブに出たりしています。
                     </p>
-                    <div>
+                    <div class="intro_box"><!--teacher_box-->
                         <p>
                             一番好きなバンドはクジラ夜の街っていうバンドで<br>
                             <span>「風のもくてきち」</span>っていう
@@ -51,11 +56,11 @@
                             よかったら聞いてみてもらえると嬉しいです。<br>
                             好きなサッカーチームは、やっぱりバルセロナですね。特にロナウジーニョがいた時のバルサを見るとワクワクさせられますよね。
                         </p>
-                        <p><img src="images/band.JPG" alt="ライブ風景"></p>
+                        <p class="mr3"><img src="images/band.JPG" alt="ライブ風景"></p>
                     </div>
-                    <a href="#hobby"></a>
+                    <a href="#hobby class=link_btn">question</a>
                 </div>
-                <p><img src="images/band_2.JPG" alt="バンド風景"></p>
+                <p class="band_img"><!--lecture_img--><img src="images/band_2.JPG" alt="バンド風景"></p>
             </div>
         </section>
         <!--やっていくこと-->

@@ -1,0 +1,199 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5rem;
+    color: #383e45;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+#head_in {
+    display: flex;
+    justify-content: space-between;
+}
+
+#head_in .logo {
+    margin: 20px 0 0 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    font-size: 1.6rem;
+    font-weight: bold;
+    list-style: none;
+    margin: 34px 70px 0 0;
+}
+
+nav ul li:last-child { 
+    margin: 0;
+}
+
+nav ul li a {
+    color: #383e45;
+}
+
+nav ul li:last-child a {
+    display: block;
+    color: #fff;
+    background-color: #383e45;
+    padding: 34px 38px;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+
+/* first view */ 
+#fv {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-image: url(../images/profile_18.JPG);
+    background-size: cover;
+    color: #fff;
+}
+
+#fv .fv_in {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 30px;
+    padding: 40px 40px 0 40px;
+}
+
+#fv h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+/*コンセプト*/
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+    line-height: 1.2;
+}
+
+h2 span {
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 9rem;
+    color: #000;
+}
+
+.wrap_1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mt14 {
+    margin-top: 140px;
+}
+
+.mr3 {
+    margin-right: 30px;
+}
+
+.mb4 {
+    margin-bottom: 40px;
+}
+
+.t_center {
+    text-align: center;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_right {
+    justify-content: flex-end;
+}
+
+.link_btn {
+    background-color: #383e45;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    border-radius: 30px;
+    padding: 15px 0;
+}
+
+.link_btn:hover {
+    color: #fff;
+    right: 10px;
+    background-color: #000;
+    transition: 0.3s;
+
+.link_btn::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f061';
+    font-size: 1.6rem;
+    margin: 0 15px 0 0;
+}
+
+/*concept*/
+#concept h3 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 66px 0 20px 0;
+}
+
+#concept p span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+#concept .band_img img {
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+}
+
+#concept .lecture_box {
+    margin: 0 30px;
+}
+
+.gray_bg_title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    background-color: #383e45;
+    padding: 14px 30px;
+}
+
+.intro_box {
+    width: 588px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    background-color: #f5f5f5;
+    padding: 30px;
+    margin: 0 0 30px 0;
+}
