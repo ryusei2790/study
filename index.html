@@ -92,6 +92,60 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div>
+                <h2><span>request</span>申込</h2>
+                <form method="post" action="sample.php">
+                    <table>
+                        <tr>
+                            <td>name<span>必須</span></td>
+                            <td><input type="text" name="name" placeholder="記入してください"></td>
+                        </tr>
+                        <tr>
+                            <td>email<span>必須</span></td>
+                            <td><input type="email" name="email" placeholder="記入してください"></td>
+                        </tr>
+                        <tr>
+                            <td>tel<span>必須</span></td>
+                            <td><input type="tel" name="tel" placeholder="記入してください"></td>
+                        </tr>
+                        <tr>
+                            <td>message<span>必須</span></td>
+                            <td><textarea name="message" placeholder="記入してください"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li><input type="radio" name="course" value="HTML">HTML</li>
+                                    <li><input type="radio" name="course" value="CSS">CSS</li>
+                                    <li><input type="radio" name="course" value="JavaScript">JavaScript</li>
+                                    <li><input type="radio" name="course" value="LLM">LLM</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>不明点・心配事<span>任意</span></td>
+                            <td>
+                                <textarea name="comment" placeholder="記入してください"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>プライバシーポリシー<span>必須</span></spam></td>
+                            <td>
+                                <div>
+                                    プライバシーポリシーについては<a href="https://www.google.com">こちら</a>をご覧ください。
+                                </div>
+                                <p>
+                                    <input type="checkbox" name="privacy" value="agree">
+                                    <label for="privacy">プライバシーポリシーに同意する</label>
+                                </p>
+                            </td>
+                        </tr> 
+                    </table>
+                    <p><button type="submit">内容を確認する</button></p>
+                </form>            
+            </div>
+        </section>
     </main>
     <footer>
     </footer>
