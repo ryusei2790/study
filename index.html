@@ -7,8 +7,10 @@
     <title>自己紹介サイト</title>
     <link rel="stylesheet" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="styleshieet" href="https://cdnjs.cloudflare.com/afax/libs/font-awesome/6.1.1/css/all.min.css">
-    
 </head>
 <body>
     <header>
@@ -26,7 +28,7 @@
         <!--ファーストビュー-->
         <div id="fv">
             <div class="fv_in">
-            <h1>ryuseiです</h1><!--開いてから左からフェードインするようにしてみる-->
+            <!--<h1>ryuseiです</h1>--><!--開いてから左からフェードインするようにしてみる-->
             <p>こんにちは、初めまして、インターン生のryuseiです<br>
                 これから教えてもらったこと、勉強したこと、やってみたこと<br>
                 を備忘録として残していこうと思います。</p>
@@ -56,44 +58,42 @@
                             よかったら聞いてみてもらえると嬉しいです。<br>
                             好きなサッカーチームは、やっぱりバルセロナですね。特にロナウジーニョがいた時のバルサを見るとワクワクさせられますよね。
                         </p>
-                        <p class="mr3"><img src="images/band.JPG" alt="ライブ風景"></p>
                     </div>
                     <a href="#hobby class=link_btn">question</a>
                 </div>
-                <p class="band_img"><!--lecture_img--><img src="images/band_2.JPG" alt="バンド風景"></p>
             </div>
         </section>
         <!--やっていくこと-->
-        <section>
-            <div>
-                <h2><span>学習と</span>これから/h2>
-                <div>
+        <section id="do"><!--merit -->
+            <div class="bg_gray"><!--bg_yellow-->
+                <div class="wrap_1240 card_in">
+                <h2 class="t_center"><span>学習とこれから</span></h2>
+                <div class="flex">
                     <article>
-                        <div>
+                        <div class="card_img">
                             <h3>HTML</h3>
+                            <img src="images/HTML.png" alt="HTML" class="img">
                         </div>
                     </article>
-                </div>
-                <div>
                     <article>
-                        <div>
+                        <div class="card_img">      
                             <h3>CSS</h3>
+                            <img src="images/CSS.png" alt="CSS" class="img">
                         </div>
                     </article>
-                </div>
-                <div>
                     <article>
-                        <div>
+                        <div class="card_img">
                             <h3>JavaScript</h3>
+                            <img src="images/javascript.png" alt="JavaScript" class="img">
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card_img">
+                            <h3>LLM（Difyなど）</h3>
+                            <img src="images/LLM.png" alt="LLM" class="img">
                         </div>
                     </article>
                 </div>
-                <div>
-                    <article>
-                        <div>
-                            <h3>LLM（Difyなど）</h3>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
@@ -175,7 +175,7 @@
     <footer>
         <p><a href="#"></a></p>
         <div>
-            <a href="./"><img src="images/profile.JPG" alt="profile"></a>
+            <!--<a href="./"><img src="images/profile.JPG" alt="profile"></a>-->
             <p>$copy;ryusei</p>
         </div>
     </footer>
