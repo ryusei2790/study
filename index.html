@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="styleshieet" href="https://cdnjs.cloudflare.com/afax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -97,29 +97,29 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2><span>request</span></h2>
+        <section id="request" class="mt14">
+            <div class="wrap_1000">
+                <h2 class="t_center"><span>request</span></h2>
                 <form method="post" action="sample.php">
-                    <table>
+                    <table class="form_table">
                         <tr>
-                            <td>name<span>必須</span></td>
-                            <td><input type="text" name="name" placeholder="記入してください"></td>
+                            <td>name<span class="surely">必須</span></td>
+                            <td><input class="form_text" type="text" name="name" placeholder="記入してください"></td>
                         </tr>
                         <tr>
-                            <td>email<span>必須</span></td>
-                            <td><input type="email" name="email" placeholder="記入してください"></td>
+                            <td>email<span class="surely">必須</span></td>
+                            <td><input class="form_text" type="email" name="email" placeholder="記入してください"></td>
                         </tr>
                         <tr>
-                            <td>tel<span>必須</span></td>
-                            <td><input type="tel" name="tel" placeholder="記入してください"></td>
+                            <td>tel<span class="surely">必須</span></td>
+                            <td><input class="form_text" type="tel" name="tel" placeholder="記入してください"></td>
                         </tr>
                         <tr>
-                            <td>message<span>必須</span></td>
+                            <td>message<span class="surely">必須</span></td>
                             <td><textarea name="message" placeholder="記入してください"></textarea></td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="form_radio"><!--gender_text -->
                                 <ul>
                                     <li><input type="radio" name="course" value="HTML">HTML</li>
                                     <li><input type="radio" name="course" value="CSS">CSS</li>
@@ -129,15 +129,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>不明点・心配事<span>任意</span></td>
+                            <td>不明点・心配事<span class="any">任意</span></td>
                             <td>
-                                <textarea name="comment" placeholder="記入してください"></textarea>
+                                <textarea class="form_text_b" name="comment" placeholder="記入してください"></textarea>
                             </td>
                         </tr>
                         <tr>
-                            <td>プライバシーポリシー<span>必須</span></spam></td>
+                            <td>プライバシーポリシー<span class="surely">必須</span></spam></td>
                             <td>
-                                <div>
+                                <div class="privacy_box">
                                     プライバシーポリシーについては<a href="https://www.google.com">こちら</a>をご覧ください。
                                 </div>
                                 <p>
@@ -147,7 +147,7 @@
                             </td>
                         </tr> 
                     </table>
-                    <p><button type="submit">内容を確認する</button></p>
+                    <p class="btn_submit"><button type="submit">内容を確認する</button></p>
                 </form>            
             </div>
         </section>
