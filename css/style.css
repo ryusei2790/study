@@ -431,3 +431,67 @@ textarea {
     font-size: 3rem;
     margin: 0 0 0 5px;
 }
+
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color: #383e45;
+}
+
+footer .wrap_1000 {
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+footer .wrap_1000 .logo {
+    display: block;
+    margin: 0 0 60px 0;
+}
+
+footer .wrap_1000 p {
+    color: #fff;
+    padding: 0 0 15px 0;
+}
+
+
+
+/*ページに戻る*/
+
+
+#pagetop img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+
+#pagetop a:hover {
+    background-color: #000;
+    transition: 0.3s;
+}
+
+#pagetop {
+    width: 50px;
+    height: 50px;
+    background-color: #383e45;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+  }
+  #pagetop a::before {
+  position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 2.5rem;
+    color: #fff;
+    top: 6px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    transition: 0.3s;
+  }
+
