@@ -60,7 +60,9 @@ nav ul li a:hover {
 /* first view */ 
 #fv {
     position: relative;
-    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    width: 50%;
     height: 750px;
     background-image: url(../images/profile_18.JPG);
     background-size: cover;
@@ -85,6 +87,8 @@ nav ul li a:hover {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     padding: 40px 40px 0 40px;
 }
 
@@ -148,25 +152,43 @@ p {
     justify-content: flex-end;
 }
 
-.link_btn {
+.link_btn,
+button {
     background-color: #383e45;
     color: #fff;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 700;
+}
+
+.link_btn {
     display: block;
     border-radius: 30px;
     padding: 15px 0;
 }
 
-.link_btn:hover {
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 30px;
+    padding: 1.5rem 8.6rem;
+}
+
+.link_btn:hover,
+button:hover {
     color: #fff;
     right: 10px;
     background-color: #000;
     transition: 0.3s;
 }
 
-.link_btn::before {
+.btn_submit {
+    text-align: center;
+}
+
+.link_btn::before,
+button::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f061';
     font-size: 1.6rem;
@@ -389,4 +411,23 @@ textarea {
 .privacy_box h3 {
     font-size: 1.8rem;
     margin: 0 0 15px 0;
+}
+
+/*access*/
+#access .access_in {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 100px 0;
+}
+
+#access .access_in h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: #383e45;
+}
+
+#access .access_in .tel span {
+    font-size: 3rem;
+    margin: 0 0 0 5px;
 }
