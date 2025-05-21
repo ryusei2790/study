@@ -711,7 +711,7 @@ textarea {
 
 footer{
     width: 100%;
-    background-color: #383e45;
+    background-color: #242526;
 }
 
 footer .wrap_1000 {
@@ -722,6 +722,14 @@ footer .wrap_1000 {
 footer .wrap_1000 .logo {
     display: block;
     margin: 0 0 60px 0;
+    width: 80px;
+    height: 80px;
+} 
+
+footer .wrap_1000 .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 footer .wrap_1000 p {
@@ -742,13 +750,19 @@ footer .wrap_1000 p {
 
 
 /*ページに戻る*/
+footer .logo {
+    display: block;
+    margin: 0 0 60px 0;
+    width: 80px;
+    height: 80px;
+}
 
-
-footer img {
-    width: 20%;
-    height: 20%;
+footer .logo img {
+    width: 80px;
+    height: 100px;
     border-radius: 50%;
 }
+
 
 #pagetop a:hover {
     background-color: #000;
