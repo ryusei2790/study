@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="robots" content="noidex, nofollow" />
     <meta name="description" content="自己紹介サイトです。" />
     <title>自己紹介サイト</title>
@@ -11,33 +12,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="head_in">
+    <header id="home">
+        <div id="home head_in">
             <a href="./" class="logo"><img src="images/logo.png" alt="logo"></a>
             </a>
             <nav>
                 <ul class="text"> 
-                    <li><a href="#home">ホーム</a></li>
-                    <li><a href="#hobby">hobby</a></li>
-                    <li><a href="#work">work</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#concept">hobby</a></li>
+                    <li><a href="#do">work</a></li>
                 </ul>
             </nav>
         </div>
         <!--ファーストビュー-->
-        <div id="fv">
+        <!-- <div id="fv">
             <div class="fv_in">
-            <!--<h1>ryuseiです</h1>--><!--開いてから左からフェードインするようにしてみる-->
             <p>こんにちは、初めまして、インターン生のryuseiです<br>
                 これから教えてもらったこと、勉強したこと、やってみたこと<br>
                 を備忘録として残していこうと思います。</p>
-        </div>
+        </div> -->
         </div>
     </header>
     <main>
         <!--　コンセプト-->
-        <section id="concept" class="mt14">
+        <!-- <section id="concept" class="mt14">
             <div class="wrap_1000">
                 <h2 class="t_center"></h2>
                 <p>
@@ -49,7 +50,7 @@
                     <p class="mb4">小中とサッカーをしていて、高校から軽音楽部に入ってギターを始めました。
                         大学に入っても軽音楽部に入って楽しくライブに出たりしています。
                     </p>
-                    <div class="intro_box"><!--teacher_box-->
+                    <div class="intro_box">
                         <p>
                             一番好きなバンドはクジラ夜の街っていうバンドで<br>
                             <span>「風のもくてきち」</span>っていう
@@ -62,10 +63,10 @@
                     <a href="#hobby class=link_btn">question</a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--やっていくこと-->
-        <section id="do"><!--merit -->
-            <div class="bg_gray"><!--bg_yellow-->
+        <!-- <section id="do">
+            <div class="bg_gray">
                 <div class="wrap_1240 card_in">
                 <h2 class="t_center"><span>学習とこれから</span></h2>
                 <div class="flex">
@@ -96,8 +97,8 @@
                 </div>
                 </div>
             </div>
-        </section>
-        <section id="request" class="mt14">
+        </section> -->
+        <!--<section id="request" class="mt14">
             <div class="wrap_1000">
                 <h2 class="t_center"><span>request</span></h2>
                 <form method="post" action="sample.php">
@@ -119,7 +120,7 @@
                             <td><textarea name="message" placeholder="記入してください"></textarea></td>
                         </tr>
                         <tr>
-                            <td class="form_radio"><!--gender_text -->
+                            <td class="form_radio">
                                 <ul>
                                     <li><input type="radio" name="course" value="HTML">HTML</li>
                                     <li><input type="radio" name="course" value="CSS">CSS</li>
@@ -150,9 +151,9 @@
                     <p class="btn_submit"><button type="submit">内容を確認する</button></p>
                 </form>            
             </div>
-        </section>
+        </section> -->
         <!--アクセス-->
-        <section id="access" class="mt14">
+        <!-- <section id="access" class="mt14">
             <div class="wrap_1240">
                 <div class="access_in">
                     <h2><span>access</span>アクセス</h2>
@@ -170,14 +171,14 @@
                     <p><img src="img/access.png" alt="アクセス"></p>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer>
-        <p id="pagetop"><a href="#"></a></p>
+    <!-- <footer>
+        <p id="pagetop"><a href="#home"></a></p>
         <div class="wrap_1000">
-            <a href="./" class="logo"><img src="images/profile.JPG" alt="profile"></a>
+            <a href="#home" class="logo"><img src="images/profile.JPG" alt="profile"></a>
             <p>$copy;ryusei</p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
