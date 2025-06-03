@@ -1,3 +1,4 @@
+/* 基本設定 */
 html {
     height: 100%;
     font-size: 62.5%;
@@ -17,10 +18,6 @@ body {
     transition: all 0.4s ease;
 }
 
-header {
-    position: relative;
-}
-
 a {
     text-decoration: none;
 }
@@ -38,140 +35,86 @@ a {
     }
 }
 
-/* header */
+/* 共通クラス */
+.wrap_1000 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
-#head_in {
+.wrap_1240 {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.mt5 { margin-top: 50px; }
+.mt14 { margin-top: 140px; }
+.mr3 { margin-right: 30px; }
+.mb4 { margin-bottom: 40px; }
+.t_center { text-align: center; }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.flex_right {
+    justify-content: flex-end;
+}
+
+/* ヘッダー */
+.header__head {
     display: flex;
     justify-content: space-between;
 }
 
-#head_in .header__head--a {
+.header__head--a {
     margin: 20px 0 0 40px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    font-size: 1.6rem;
-    font-weight: bold;
-    list-style: none;
-    margin: 34px 34px 15px 0;
-}
-
-/*nav ul li:last-child { 
-    margin: 10px 0 0 0;
-}*/
-
-nav ul li a {
-    color: #383e45;
-}
-
-/*nav ul li:last-child a {
-    display: block;
-    color: #fff;
-    background-color: #a3c9f3;
-    padding: 34px 38px;
-}*/
-
-nav ul li a:hover {
-    color: #000;
-}
-
-/* ハンバーガーメニュー */
-
-.nav__head {
-    display: none;
-}
-
-@media only screen and (max-width: 1200px) {
-#head_in {
-    display: block;
-}
-
-#head_in .header__head--a img {
+.header__head--a img {
     width: 247px;
     margin: 25px 36px 25px 0;
 }
 
-nav ul {
-    flex-direction: column;
-    justify-content: flex-start;
+/* ナビゲーション */
+.nav__head {
+    display: none;
 }
 
-nav ul li {
-    font-size: 2rem;
-    padding: 0 0 0 30px;
+.nav__foot {
+    display: flex;
+    justify-content: flex-end;
 }
 
-/*nav ul li:last-child a {
-    display: block;
-    color: #0c0b0b;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 40px;
-    padding: 2.5rem 0;
-    margin: 40px 30px 0 0;
-}
-*/
-
-/*nav ul li:last-child a::before {
-    font-family: 'Font Awesome 6 Free';
-    content: "\f105";
+.nav__foot li {
     font-size: 1.6rem;
-    margin: 0 15px 0 0;
-}*/
-
-nav .label {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #c4cdd6;
-    z-index: 100;
-    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    margin: 34px 70px 0 0;
 }
 
-nav span {
-    width: 40px;
-    height: 3px;
-    position: absolute;
-    background-color: #fff;
-    right: 20px;
-    z-index: 200;
-  }
-  nav .nav__head-list__item {
-    top: 26px;
-  }
-  nav .nav__head-list__item {
-    top: 36px;
-  }
-  nav .nav__head-list__item {
-    top: 46px;
-  }
-
-nav .nav__foot {
-    overflow: hidden;
-    height: 0;
-    margin: 0 0 0 0;
+.nav__foot li:last-child {
+    margin: 0;
 }
-  
-nav .nav__head:checked + .label + .text {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 300px;
-    background: #5b9ce6;
+
+.nav__foot li a {
+    color: #383e45;
 }
+
+.nav__foot li:last-child a {
+    display: block;
+    color: #fff;
+    background-color: #383e45;
+    padding: 34px 38px;
 }
-  
 
-
-
-/* first view */ 
+/* ファーストビュー */
 #fv {
     position: relative;
     margin: 0 auto;
@@ -184,18 +127,7 @@ nav .nav__head:checked + .label + .text {
     background-position: center;
 }
 
-/*
-#concept {
-    position: relative;
-    width: 100%;
-    height: 750px;
-    background-image: url(../images/band_2.JPG);
-    background-size: cover;
-    color: #fff;
-}   
-*/
-
-#fv .header__foot-head {
+.header__foot-head {
     position: absolute;
     z-index: 1;
     bottom: 0;
@@ -206,33 +138,13 @@ nav .nav__head:checked + .label + .text {
     padding: 40px 40px 0 40px;
 }
 
-@media only screen and (max-width: 600px) {
-    #fv {
-        height: 60rem;
-        background: url(../images/profile_18.JPG) no-repeat center center;
-        background-size:cover;
-        color: #fff;
-    }
-
-    #fv .catchcopy {
-        bottom: 50px;
-        border-top-left-radius: 30px;
-        padding: 30px 30px 0 30px;
-    }
-    .sp {
-        display: none;
-    }
+/* セクション共通 */
+section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-
-#fv h1 {
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
-    margin: 0 0 30px 0;
-}
-
-/*コンセプト*/
 h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -247,129 +159,9 @@ h2 span {
     color: #000;
 }
 
-
-
-.link_btn,
-button {
-    background-color: #383e45;
-    color: #fff;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.link_btn {
-    display: block;
-    border-radius: 30px;
-    padding: 15px 0;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-    outline: none;
-    border-radius: 30px;
-    padding: 1.5rem 8.6rem;
-}
-
-.link_btn:hover,
-button:hover {
-    color: #fff;
-    right: 10px;
-    background-color: #000;
-    transition: 0.3s;
-}
-
-.btn_submit {
-    text-align: center;
-}
-
-@media only screen and (max-width: 1024px) {
-    .link_btn,
-    button {
-        font-size: 1.7rem;
-        border-radius: 40px;
-        padding: 25px 0;
-    }
-
-    .btn {
-        width: 100%;
-    }
-}
-
-.link_btn::before,
-button::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f061';
-    font-size: 1.6rem;
-    margin: 0 15px 0 0;
-}
-
-/*concept*/
-#concept h3 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin: 66px 0 20px 0;
-}
-
-#concept p span {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    margin: 0 0 20px 0;
-}
-
-#concept .band_img img {
-    width: 100%;
-    border-radius: 30px 0 0 30px;
-}
-
-
-
-#concept .body__body-head {
+/* コンセプト */
+.block__body-head {
     margin: 0 30px;
-}
-
-@media only screen and (max-width: 1200px) {
-    #concept  {
-        margin: 90px 0 0 0 ;
-    }
-
-    #concept h3 {
-        margin: 25px 0 20px 0;
-    }
-
-    #concept .flex {
-        width: auto;
-        padding: 0 30px;
-    }
-    .concept .block__body-head {
-        margin: 0;
-    }
-
-    #concept .lexcure_img img,
-    #concept .lecture_img_1 img {
-        width: 100%;
-        border-radius: 30px;
-    }
-
-    .flex_right {
-        flex-direction: column-reverse;
-    }
-
-    .flex_d_row_re {
-        flex-direction: column-reverse;
-    }
-}
-
-.gray_bg_title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
-    display: inline-block;
-    background-color: #383e45;
-    padding: 14px 30px;
 }
 
 .block__body-head_body {
@@ -382,23 +174,7 @@ button::before {
     margin: 0 0 30px 0;
 }
 
-@media only screen and (max-width: 1300px) {
-    .bloxk__body-head_body {
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .block__body-head_body {
-        flex-direction: column-reverse;
-    }
-
-    .block__body-head_body .mr3 {
-        text-align: center;
-        margin: 0 0 10px 0;
-    } 
-}
-
+/* 学習セクション */
 #do .bg_gray {
     width: 100%;
     height: 380px;
@@ -412,87 +188,35 @@ button::before {
     top: -250px;
     left: 0;
     right: 0;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 #do .bg_gray article {
-    margin: 0 20px;
+    margin: 0;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: calc(25% - 13px);
+    width: calc(25% - 15px);
+    box-sizing: border-box;
 }
 
-#do .bg_gray article:last-child {
-    margin-right: 0;
-}
-
-@media only screen and (max-width: 1240px) {
-    #do img {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 999px) {
-    #do .bg_gray {
-        width: 100%;
-        height: auto;
-        padding: 80px 0 0 0;
-        margin: 140px 0 0 0;
-    }
-
-    #do .bg_gray .card_in {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    #do .flex {
-        flex-direction: column;
-    }
-
-    #do .bg_gray article {
-        width: 100%;
-        margin: 0 0 100px 0;
-    }
-}
-
-#do .bg_gray .do__item {
+.do__item {
     display: flex;
     flex-direction: column-reverse;
 }
 
 .do__item img {
-    width: 200px;
+    width: 100%;
     height: auto;
     border-radius: 15px;
-    margin: auto;
+    margin: 20px 0;
+    object-fit: cover;
 }
 
-#do .bg_gray article h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff;
-    margin: 25px 0;
-}
-
-/* その他の画像サイズ調整 */
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
-
-/*request*/
-
-#request {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-#request table {
-    margin: auto;
-}
-
+/* フォーム */
 .form_table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -501,86 +225,21 @@ button::before {
 
 .form_table ul li {
     list-style: none;
-    margin: 00 10px 0;
+    margin: 0 10px 0;
 }
 
 th, td {
     border-bottom: 1px solid #383e45;
     vertical-align: middle;
-}
-
-th {
-    text-align: left;
-    font-weight: normal;
-}
-
-th:first-child,
-td {
-    width: 320px;
     padding: 35px 40px;
-}
-
-th:first-child,
-td:nth-child(odd) {
-    font-size: 1.7rem;
-    font-weight: 600;
-    background-color: #f5f5f5;
-}
-
-th:last-child,
-td:nth-child(even) {
-    width: 520px;
-}
-
-@media only screen and (max-width: 999px) {
-    th, td {
-        border-bottom: none;
-        display: block;
-        width: auto;
-    }
-
-    th:first-child,
-    th:last-child ,
-    td:nth-child(even) {
-        width: auto;
-        padding: 35px 20px 35px0;
-    }
-}
-
-.surely,
-.any {
-    font-size: 1.2rem;
-    font-weight:normal;
-    color: #fff;
-    padding: 8px;
-    float: right;
-    margin: -10px 0 0 0;
-}
-
-.surely {
-    background-color: #383e45;
-}
-
-.any {
-    background-color: #000;
 }
 
 .form_text,
 .form_text_s {
     height: 30px;
-}
-
-@media only screen and (max-width: 999px) {
-    .form_text_s {
-        width: 100%;
-    }
-
-.form_text {
     width: 100%;
-}
-
-.form_text_s {
-    width: 30%;
+    padding: 10px;
+    border: 1px solid #383e45;
 }
 
 .form_text_b {
@@ -589,6 +248,80 @@ td:nth-child(even) {
     border: 1px solid #383e45;
 }
 
+/* フッター */
+footer {
+    width: 100%;
+    background-color: #383e45;
+    padding: 30px 0;
+}
+
+.footer__body {
+    text-align: center;
+    padding: 0;
+}
+
+.footer__body .logo {
+    display: inline-block;
+    margin: 10px 50px 10px;
+}
+
+.footer__body .logo img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.footer__body p {
+    color: #fff;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+/* レスポンシブ対応 */
+@media only screen and (max-width: 1239px) {
+    .wrap_1000,
+    .wrap_1240 {
+        width: 100%;
+        max-width: 1000px;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header__head {
+        padding: 0 20px;
+    }
+    
+    .header__head--a img {
+        width: 200px;
+    }
+    
+    .nav__foot {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #do .bg_gray article {
+        width: 100%;
+    }
+    
+    .block__body-head_body {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #fv {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .header__foot-head {
+        padding: 20px;
+    }
+}
+
+/* フォーム */
 input[type="radio"] {
     width: 3rem;
     height: 3rem;
@@ -673,90 +406,7 @@ textarea {
     }
 }
 
-/*footer*/
-
-footer {
-    width: 100%;
-    background-color: #383e45;
-}
-
-footer .wrap_1000 {
-    text-align: center;
-    padding: 60px 0 0 0;
-}
-
-footer .footer__body .logo {
-    display: inline-block;
-    margin: 10px 50px 20px;
-}
-
-footer .footer__body .logo img {
-    width: 60%;
-    height: 60%;
-    max-width: 80px;
-    max-height: 80px;
-    border-radius: 20%;
-    object-fit: cover;
-    display: block;
-}
-
-/* 大画面用のスタイル */
-@media only screen and (min-width: 1200px) {
-    footer .footer__body .logo {
-        max-width: 60px;
-    }
-    footer .footer__body .logo img {
-        max-width: 60px;
-        max-height: 60px;
-    }
-}
-
-/* 小画面用のスタイル */
-@media only screen and (max-width: 375px) {
-    footer .footer__body .logo {
-        max-width: 50px;
-    }
-    footer .footer__body .logo img {
-        max-width: 50px;
-        max-height: 50px;
-    }
-}
-
-footer .footer__body p {
-    color: #fff;
-    padding: 0 0 15px 0;
-}
-
-@media only screen and (max-width: 375px) {
-    footer .footer__body p {
-        font-size: 1.4rem;
-    }
-
-    footer .footer__body .logo {
-        margin: 0 20px 60px 20px;
-    }
-}
-
-
-
-/*ページに戻る*/
-footer .logo {
-    display: block;
-    margin: 0 0 60px 0;
-    width: 80px;
-    height: 80px;
-}
-
-
-/* footer .logo */
-/* img {
-    border-radius: 50%; 
-    object-fit: cover;  
-    display: inline-block;
-   margin-bottom: 10px;
-} */
-
-
+/* ページに戻る */
 #pagetop a:hover {
     background-color: #000;
     transition: 0.3s;
@@ -770,8 +420,9 @@ footer .logo {
     bottom: 30px;
     right: 30px;
     border-radius: 50%;
-  }
-  #pagetop a::before {
+}
+
+#pagetop a::before {
     position: absolute;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -796,42 +447,12 @@ footer .logo {
 /* ロゴのサイズを調整 */
 /* footerの部分の画像がフルスクリーンだと視覚行く画面いっぱいに広がってしまう原因がわかりません。 */
 
-.wrap_1000 {
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.wrap_1240 {
-    width: 1240px;
-    margin: 0 auto;
-}
-
-@media only screen and (max-width: 1239px) {
-    .wrap_1000,
-    .wrap_1240 {
-        width: auto;
-        padding: 0 30px;
-    }
-}
-
-.mt5 {
-    margin-top: 50px;
-}
-
-.mt14 {
-    margin-top: 140px;
-}
-
-.mr3 {
-    margin-right: 30px;
-}
-
-.mb4 {
-    margin-bottom: 40px;
-}
-
 .t_center {
-    text-align: center;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 p {
@@ -839,10 +460,23 @@ p {
     font-size: 1.6rem;
 }
 
-.flex {
-    display: flex;
+/* 各セクションのコンテンツ幅調整 */
+#concept,
+#do,
+#request,
+#access {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.flex_right {
-    justify-content: flex-end;
+@media only screen and (max-width: 768px) {
+    #concept,
+    #do,
+    #request,
+    #access {
+        padding: 0 15px;
+    }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="robots" content="noidex, nofollow" />
     <meta name="description" content="自己紹介サイトです。" />
-    <title>自己紹介サイト</title>
+    <title>自己紹介ページ・サイト</title>
     <link rel="stylesheet" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,47 +16,50 @@
 </head>
 <body>
     <header id="home">
-        <div id="home head_in">
-            <a href="./" class="logo"><img src="images/logo.png" alt="logo"></a>
-            </a>
-            <nav>
-                <input id="check-a" type="checkbox" class="check">
-                <label class="label" for="check-a">
-                    <span class="border1"></span>
-                    <span class="border2"></span>
-                    <span class="border3"></span>
-                </label>
-                <ul class="text"> 
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#concept">hobby</a></li>
-                    <li><a href="#do">work</a></li>
+        <div class="header__head" id="head_in">
+            <a href="./" class="header__head--a"><img src="images/logo.png" alt="logo" class="header__head--a"></a>
+            <nav class="nav">
+                <input type="checkbox" class="nav__head" id="check-a">
+                    <label for="check-a" class="nav__head-list">
+                        <span class="nav__head-list__item"></span>
+                        <span class="nav__head-list__item"></span>
+                        <span class="nav__head-list__item"></span>
+                    </label>
+                </input>
+                <ul class="nav__foot">
+                    <li><a href="#head">home</a></li>
+                    <li><a href="#do">content</a></li>
+                    <li><a href="#request">access</a></li>
+                    <li><a href="#access">work</a></li>
                 </ul>
             </nav>
         </div>
-        <!--ファーストビュー-->
-        <div id="fv">
-            <div class="fv_in">
-            <p>こんにちは、初めまして、インターン生のryuseiです<br>
+        <div class="header__foot" id="fv">
+            <div class="header__foot-head">
+                <p>
+                    こんにちは、初めまして、インターン生のryuseiです<br>
                 これから教えてもらったこと、勉強したこと、やってみたこと<br>
-                を備忘録として残していこうと思います。</p>
-        </div>
+                を備忘録として残していこうと思います。
+                </p>
+            </div>
         </div>
     </header>
     <main>
-        <!--　コンセプト-->
-        <section id="concept" class="mt14">
-            <div class="wrap_1000">
-                <h2 class="t_center"></h2>
-                <p>
-                </p>
+        <section id="concept" class="block mt14">
+            <div class="block__head wrap_1000">
+                <h2 class="block__head-head t_center">
+                </h2>
+                <p class="block__head-body t_center"></p>
             </div>
-            <div class="mt5 flex flex_right">
-                <div class="lecture_box">
-                    <h3 class="gray_bg_title">自己紹介</h3>
+            <div class="block__body mt5 flex flex_right">
+                <div class="block__body-head">
+                    <h3 class="block__body-head_head gray_bg_title">
+                    自己紹介
+                    </h3>
                     <p class="mb4">小中とサッカーをしていて、高校から軽音楽部に入ってギターを始めました。
                         大学に入っても軽音楽部に入って楽しくライブに出たりしています。
                     </p>
-                    <div class="intro_box">
+                    <div class="block__body-head_body">
                         <p>
                             一番好きなバンドはクジラ夜の街っていうバンドで<br>
                             <span>「風のもくてきち」</span>っていう
@@ -66,48 +69,47 @@
                             好きなサッカーチームは、やっぱりバルセロナですね。特にロナウジーニョがいた時のバルサを見るとワクワクさせられますよね。
                         </p>
                     </div>
-                    <a href="#hobby class=link_btn">question</a>
+                    <a href="#hobby" class="link_btn">question</a>
                 </div>
             </div>
         </section>
-        <!--やっていくこと-->
         <section id="do">
             <div class="bg_gray">
                 <div class="wrap_1240 card_in">
-                <h2 class="t_center"><span>学習とこれから</span></h2>
-                <div class="flex">
-                    <article>
-                        <div class="card_img">
-                            <h3>HTML</h3>
-                            <img src="images/HTML.png" alt="HTML" class="img">
-                        </div>
-                    </article>
-                    <article>
-                        <div class="card_img">      
-                            <h3>CSS</h3>
-                            <img src="images/CSS.png" alt="CSS" class="img">
-                        </div>
-                    </article>
-                    <article>
-                        <div class="card_img">
-                            <h3>JavaScript</h3>
-                            <img src="images/javascript.png" alt="JavaScript" class="img">
-                        </div>
-                    </article>
-                    <article>
-                        <div class="card_img">
-                            <h3>LLM（Difyなど）</h3>
-                            <img src="images/LLM.png" alt="LLM" class="img">
-                        </div>
-                    </article>
-                </div>
+                    <h2 class="t_center"><span>学習とこれから</span></h2>
+                    <div class="flex">
+                        <article>
+                            <div class="do__item">
+                                <h3>HTML</h3>
+                                <img src="images/HTML.png" alt="HTML" class="img">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="do__item">
+                                <h3>CSS</h3>
+                                <img src="images/CSS.png" alt="CSS" class="img">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="do__item">
+                                <h3>JavaScript</h3>
+                                <img src="images/JavaScript.png" alt="JavaScript" class="img">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="do__item">
+                                <h3>LLM（Difyなど）</h3>
+                                <img src="images/LLM.png" alt="LLM" class="img">
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="request" class="mt14">
-            <div class="wrap_1000">
-                <h2 class="t_center"><span>request</span></h2>
-                <form method="post" action="sample.php">
+            <div class="request__body wrap_1000">
+                <h2 class="t_center"><span>お問い合わせ</span></h2>
+                <form method="post" action="sample.js">
                     <table class="form_table">
                         <tr>
                             <td>name<span class="surely">必須</span></td>
@@ -155,19 +157,16 @@
                         </tr> 
                     </table>
                     <p class="btn_submit"><button type="submit">内容を確認する</button></p>
-                </form>            
+                </form>
             </div>
         </section>
-        <!--アクセス-->
-        <section id="access" class="mt14">
-            <div class="wrap_1240">
-                <div class="access_in">
+        <section id="access" class="access mt14">
+            <div class="access__body wrap_1240">
+                <div class="access__body-body access_in">
                     <h2><span>access</span>アクセス</h2>
                     <div class="mt4">
-                        <h3>住所</h3>
+                        <h3></h3>
                         <p>
-                            東京都千代田区永田町1-7-1<br>
-                            永田町ビル10F
                         </p>
                         <p>
                             <a href="https://www.google.com/maps/place/%E6%B0%B8%E7%94%B0%E7%94%BA%E3%83%93%E3%83%AB10F/@35.6640626,139.7530958,17z/data=!3m1!4b1!4m6!3m5!1s0x60188b75e4656e1b:0x5396107219551c0!8m2!3d35.6640626!4d139.7552845!16s%2Fg%2F11c402xjzn?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">GoogleMapで見る</a>
